@@ -1,18 +1,19 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'mech/js/version'
+require 'mech_js/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "mech-js"
-  spec.version       = Mech::Js::VERSION
+  spec.version       = MechJS::VERSION
   spec.authors       = ["Sam Treweek"]
-  spec.email         = ["samtreweek@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.email         = ["info@uksa.eu"]
+  spec.summary       = %q{Addon library for mechanize for Javascript.}
+  spec.description   = %q{Mechanize has no support for Javascript,
+                          this library allows the user to apply standard browser
+                          type events, which will trigger a get request}
+  spec.homepage      = "http://www.uksa.eu"
   spec.license       = "MIT"
-
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})

@@ -1,6 +1,8 @@
-# Mech::Js
+# MechJs
 
-TODO: Write a gem description
+Mechanize has no support for Javascript, 
+this library allows the user to apply standard browser
+type events, which will trigger a get request
 
 ## Installation
 
