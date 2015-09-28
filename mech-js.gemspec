@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Mechanize has no support for Javascript,
                           this library allows the user to apply standard browser
                           type events, which will trigger a get request}
-  spec.homepage      = "http://www.uksa.eu"
+  spec.homepage      = "https://www.uksa.eu"
   spec.license       = "MIT"
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
